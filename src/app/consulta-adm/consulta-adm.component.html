@@ -1,0 +1,34 @@
+<div class="container-tb">
+    <table class="table">
+        <thead class="bg-success">
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Nascimento</th>
+                <th>Gestante</th>
+                <th>Pcd</th>
+                <th>Perfil</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of usuarios">
+                <td> {{ user.id }}</td>
+                <td> {{ user.nome }}</td>
+                <td> {{ user.email }}</td>
+                <td> {{ user.senha }}</td>
+                <td> {{ user.datanascimento }}</td>
+                <td> {{ user.gestante }}</td>
+                <td> {{ user.pcd }}</td>
+                <td> {{ user.perfil }}</td>
+
+                <td> <a [routerLink]="['/usuarios']"><i class="material-icons text-info">mode_edit</i></a></td>
+                <td> <i role="button" class="material-icons text-danger" (click)="excluir(user.email)">delete</i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
