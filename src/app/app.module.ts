@@ -8,6 +8,7 @@ import {UsuarioComponent } from './usuario/usuario.component';
 import { TopoComponent } from './topo/topo.component';
 import { ConsultaAdmComponent } from './consulta-adm/consulta-adm.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     UsuarioComponent,
     TopoComponent,
-    ConsultaAdmComponent
+    ConsultaAdmComponent,
+    NavbarComponent
   
   ],
   imports: [

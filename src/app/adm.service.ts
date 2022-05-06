@@ -5,21 +5,21 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AdmService {
-  consultarTodos(){
+  consultarTodos() {
     let url = 'http://localhost:8081/usuarios';
     return this.http.get(url);
   }
-  getAll(){
+  getAll() {
     let url = 'http://localhost:8081/usuarios';
-   return this.http.get(url)
+    return this.http.get(url)
   }
-  gravar(dados: any){
+  gravar(dados: any) {
     let url = 'http://localhost:8081/usuarios';
-    return this.http.post(url,dados)
+    return this.http.post(url, dados)
   }
-  excluir(idusuarios: any){
+  excluir(idusuarios: any) {
     return this.http.delete(`http://localhost:8081/usuarios/${idusuarios}`)
   }
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 }

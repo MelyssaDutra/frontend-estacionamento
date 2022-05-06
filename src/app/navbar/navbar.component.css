@@ -1,0 +1,44 @@
+nav {
+    margin-top: 20px;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.nav-icon {
+    fill: white;
+}
+
+.nav-nome-logo {
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 60px;
+}
+
+
+
+
